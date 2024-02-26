@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='basic-style.css')}}">
+    <title>IdentyFY</title>
+</head>
+<body>
+    
+    <div class="content">
+        <h1 class="title">IdentyFY</h1>
+        <div class="group-buttons">
+            <a class="btn-go" href="{{url_for('about')}}"><strong>Sobre o projeto <img class="icon" src="static/assets/avancar.png"></strong></a>
+            <a class="btn-go" href="{{url_for('explane_nltk')}}"><strong>O que é NLTK?<img class="icon" src="static/assets/avancar.png"></strong></a>
+            <a class="btn-go" href="{{url_for('my_description')}}"><strong>Quem sou eu?<img class="icon" src="static/assets/avancar.png"></strong></a>
+        </div>
+        
+       <a href="{{url_for('identificar_sentimento')}}" class="nav-button">Experimente</a>
+    
+    </div>
+    
+</body>
+</html>

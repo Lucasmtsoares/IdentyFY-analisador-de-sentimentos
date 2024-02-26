@@ -1,0 +1,56 @@
+responses = {
+  "respostas": [
+    {"id": 0, "comentario": "Que incrível! Fico feliz por você."},
+    {"id": 1, "comentario": "Isso é maravilhoso! Aproveite esse momento especial."},
+    {"id": 2, "comentario": "Parabéns! É sempre bom celebrar as coisas boas da vida."},
+    {"id": 3, "comentario": "Que notícia maravilhosa! Alegria contagiante."},
+    {"id": 4, "comentario": "Isso é tão bom de ouvir! A felicidade está no ar."},
+    {"id": 5, "comentario": "Que coisa incrível! Fico feliz por você."},
+    {"id": 6, "comentario": "É sempre bom receber notícias positivas. Parabéns!"},
+    {"id": 7, "comentario": "Que alegria! Coisas boas acontecendo."},
+    {"id": 8, "comentario": "Isso é fantástico! A felicidade está batendo à sua porta."},
+    {"id": 9, "comentario": "Que notícia maravilhosa! Comemore esse momento especial."},
+    {"id": 10, "comentario": "Que incrível! Compartilhe mais sobre isso, estou animado(a) por você."},
+    {"id": 11, "comentario": "Isso é tão bom de ouvir! Que sua felicidade continue crescendo."},
+    {"id": 12, "comentario": "Parabéns! Que esse momento traga muita alegria para a sua vida."},
+    {"id": 13, "comentario": "Que notícia maravilhosa! Você merece todas as coisas boas."},
+    {"id": 14, "comentario": "Que coisa incrível! Estou torcendo por mais momentos como esse."},
+    {"id": 15, "comentario": "É sempre bom celebrar as vitórias da vida. Parabéns!"},
+    {"id": 16, "comentario": "Que alegria contagiante! Seu entusiasmo é contagiante."},
+    {"id": 17, "comentario": "Isso é fantástico! Que continue sendo assim."},
+    {"id": 18, "comentario": "Fico feliz por você! Compartilhe mais detalhes dessa boa notícia."},
+    {"id": 19, "comentario": "Que notícia maravilhosa! Aproveite cada momento desse sucesso."},
+    {"id": 20, "comentario": "Isso é tão especial! Continue espalhando alegria."},
+    {"id": 21, "comentario": "Parabéns! Que essa conquista seja apenas o começo de coisas incríveis."},
+    {"id": 22, "comentario": "Que coisa incrível! Estou compartilhando da sua felicidade."},
+    {"id": 23, "comentario": "Isso é fantástico! Alegria total."},
+    {"id": 24, "comentario": "Que notícia maravilhosa! Continue colhendo frutos positivos."},
+    {"id": 25, "comentario": "Parabéns! Suas conquistas são inspiradoras."},
+    {"id": 26, "comentario": "Isso é tão bom de ouvir! Continue trilhando esse caminho positivo."},
+    {"id": 27, "comentario": "Que coisa incrível! Sua felicidade é contagiante."},
+    {"id": 28, "comentario": "Parabéns! Que mais sucessos venham ao seu encontro."},
+    {"id": 29, "comentario": "Que notícia maravilhosa! Estou animado(a) por você."},
+    {"id": 30, "comentario": "Isso é fantástico! Continue brilhando."},
+    {"id": 31, "comentario": "Fico feliz por você! Continue sendo essa fonte de alegria."},
+    {"id": 32, "comentario": "Que coisa incrível! Seu sucesso é inspirador."},
+    {"id": 33, "comentario": "Parabéns! Que essa alegria se multiplique."},
+    {"id": 34, "comentario": "Isso é tão bom de ouvir! Continue celebrando cada vitória."},
+    {"id": 35, "comentario": "Que notícia maravilhosa! Que venham mais momentos felizes."},
+    {"id": 36, "comentario": "Parabéns! Você merece todas as coisas boas que estão acontecendo."},
+    {"id": 37, "comentario": "Que coisa incrível! Sua positividade é inspiradora."},
+    {"id": 38, "comentario": "Isso é fantástico! Que sua felicidade seja duradoura."},
+    {"id": 39, "comentario": "Fico feliz por você! Continue espalhando essa energia positiva."},
+    {"id": 40, "comentario": "Que notícia maravilhosa! Continue brilhando."},
+    {"id": 41, "comentario": "Isso é tão bom de ouvir! Continue aproveitando cada momento."},
+    {"id": 42, "comentario": "Parabéns! Que essa conquista seja apenas o começo de coisas incríveis."},
+    {"id": 43, "comentario": "Que coisa incrível! Estou compartilhando da sua felicidade."},
+    {"id": 44, "comentario": "Isso é fantástico! Alegria total."},
+    {"id": 45, "comentario": "Que notícia maravilhosa! Continue colhendo frutos positivos."},
+  ]
+}
+
+def getResponse_positive(id):
+    for resposta in responses["respostas"]:
+        if resposta["id"] == id:
+            return resposta["comentario"]
+    return "Comentário não encontrado."

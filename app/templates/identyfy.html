@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename="identyfy-style.css")}}" />
+    <title>Analisado de sentimentos</title>
+</head>
+<body>
+    <header class="header">
+        <h2 id="title">IdentyFY</h2>
+        <a href="{{url_for('index')}}" class="header-section">
+            <p class="out">sair</p>
+            <img id="back" src="static/assets/back-icon.png"/>
+        </a>
+    </header>
+    <div id="content">        
+            
+            <div class="container">
+                <div class="container-question">
+                    <p class="msg-init">#escreva algo</p>
+                    {% if message %}
+                    <p id="question"> {{message}}</p>
+                    {% endif %}
+                </div>
+                {% if response %}
+                    <p id="response">{{response}}</p>
+                {% endif %}
+                
+                <div class="container-response">
+                    <p class="msg-init">#receba uma resposta</p>
+                    <p id="mytext"> </p>
+                </div>
+                <div class="container-result-block">
+                    <p class="msg-init">#detalhes</p>
+                    {% if instance %}
+                    <div class="container-result">
+                        <div class="result result-pos">positividade {{instance['pos']}}</div>
+                        <div class="result result-neg">negatividade {{instance['neg']}}</div>
+                        <div class="result result-neu">neutralidade {{instance['neu']}}</div>
+                    </div>
+                    
+                    {% endif %}
+                </div>
+                <div>
+                    <span id="loading"></span>
+                </div>
+            </div>
+       
+        <form action="{{url_for('identificar_sentimento')}}" method="POST">
+            <div id="form">
+                <input type="text" id="date" ="esconderTeclado()" name="date" placeholder="Digite o seu texto aqui..." required>
+                <button type="submit" id="button-send" onclick="show()">Enviar</button>
+            </div>
+            <p id="msg">IdentyFY é um projeto pessoal bem simples que pode apresentar respostas erradas.</p>
+        </form>
+    </div>
+
+    <script src="{{url_for('static', filename='js/prossesing.js')}}"></script>
+    <script src="{{url_for('static', filename='js/loading.js')}}"></script>
+</body>
+</html>

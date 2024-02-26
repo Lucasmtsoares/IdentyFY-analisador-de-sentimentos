@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='default-menu-style.css')}}">
+    <title>IdentyFY</title>
+</head>
+<body>
+    <header class="header">
+        <a class="back-section" href="{{url_for('index')}}"><img class="back" src="static/assets/back.png">
+        <p>voltar</p></a>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Sobre o projeto</h1>
+            <br/>
+            <p class="text">Olá! Tudo bem? Espero que sim! Fico feliz por você se interessar pelo meu projeto. O IdentyFY é um aplicativo que nasceu da minha curiosidade sobre a possibilidade de identificar sentimentos através de algoritmos. A resposta que encontrei foi: sim, é totalmente possível. A partir disso, comecei a pesquisar e encontrei uma biblioteca em Python que permitia, entre seus muitos recursos, analisar sentimentos. Com essa descoberta, tive a ideia de criar um site de amostra inspirado no CHATGPT e no Bard/Gemini. Claro que o meu projeto é muito mais simples, mas ainda assim ele é capaz de interpretar sentimentos e dizer se são positivos, negativos ou neutros. Além disso, eu queria que o site fosse em português, mas a biblioteca que escolhi não tinha uma versão para o idioma. Então, utilizei outra biblioteca para traduzir do português para o inglês, e deu certo! 😄 Quanto ao nome IdentyFY, “Identy” vem de identidade e o “F” de sentimentos (“Feelings”). O “Y” é apenas para dar uma pronúncia legal. rsrs
+            <br/>
+            <br/>
+            Mas como usar a aplicação?
+            <br/>
+            <br/>
+            É simples, você digita uma frase e recebe uma resosta a depender do tipo de sentimento identificado. Por último você pode vizualizar os detalhes logo a baixo.
+            <br/>
+            <br/>
+            Ah, e o projeto também está no GitHub: 
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
